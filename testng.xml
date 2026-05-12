@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="2">
+  <listeners>
+  	<listener class-name="Bank.Listeners"></listener>
+  </listeners>
+  
+  <test name="SecuredLoan">
+  <parameter name="Name" value="Shayan"></parameter>
+    <classes>
+      <class name="Bank.Homeloan">
+      <methods>
+         <exclude name ="cl"/>
+      </methods>
+    </class>
+        <class name="Bank.loanAgainstProperty"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="UnSecuredLoan">
+    <classes>
+      <class name="Bank.PersonalLoan"/>
+    </classes>
+  </test>
+</suite> <!-- Suite -->
