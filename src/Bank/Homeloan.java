@@ -7,6 +7,7 @@ public class Homeloan extends PersonalLoan{
 	 @Test
 	 public void cl() {
 		 System.out.println("construction loan");
+		 System.out.println("8% interest");
 		 
 	 }
 	 @Test

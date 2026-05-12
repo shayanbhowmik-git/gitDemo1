@@ -9,6 +9,7 @@ public class PersonalLoan {
 	 public void eligibility(int income) {
 		 if(income>20000) {
 			 System.out.println("Eligible");
+			 System.out.println("12% interest");
 		 }
 		 else {
 			 System.out.println("Sorry!");
