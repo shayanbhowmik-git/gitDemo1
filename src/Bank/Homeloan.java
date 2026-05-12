@@ -16,6 +16,13 @@ public class Homeloan extends PersonalLoan{
 		 
 		 
 	 }
+	 @Test
+	 public void branchCheck() {
+		 System.out.println("branch check from git demo");
+		 
+		 System.out.println("fromm onl demo ");
+	 }
+	
 //	 @Test
 //	 public void needOtherLoan() {
 //		 eligibility();
